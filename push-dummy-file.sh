@@ -10,4 +10,5 @@ do
 	git mff
 	touch dummy
 	git acmp dummy
+	cd ..
 done

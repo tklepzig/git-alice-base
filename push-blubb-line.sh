@@ -10,4 +10,5 @@ do
 	git mff
 	echo blubb >> things.txt
 	git acmp blubb
+	cd ..
 done
