@@ -5,6 +5,6 @@ do
 	#delete develop branch
 	git push alice-$i :develop
 
-	#revert master back to base-master
-	git push -f alice-$i master
+	#revert master back to init
+	git push -f alice-$i init:master
 done
