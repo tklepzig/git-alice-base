@@ -1,11 +1,13 @@
 #!/bin/bash
 
-echo blubb >> things.txt
-git acm blubb
+cd repos
 
-for i in {1..6}
+for i in {1..4}
 do
-	git push alice-$i master:develop
+	cd git-alice-$i
+	git f
+	git c develop
+	git mff
+	echo blubb >> things.txt
+	git acmp blubb
 done
-
-git rh origin/master

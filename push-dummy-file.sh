@@ -1,11 +1,13 @@
 #!/bin/bash
 
-touch dummy
-git acm dummy
+cd repos
 
-for i in {1..6}
+for i in {1..4}
 do
-	git push alice-$i master:develop
+	cd git-alice-$i
+	git f
+	git c develop
+	git mff
+	touch dummy
+	git acmp dummy
 done
-
-git rh origin/master
