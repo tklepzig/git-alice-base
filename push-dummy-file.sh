@@ -2,7 +2,7 @@
 
 cd repos
 
-for i in {1..4}
+for i in {1..6}
 do
 	cd git-alice-$i
 	git f
